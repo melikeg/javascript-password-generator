@@ -14,23 +14,44 @@
   <body>
     <main>
       <div class="container">
+        <div class="alert-container" id="alert">
+          <div class="alert">alert</div>
+        </div>
+        <h2>Password Generator</h2>
         <div class="pw-container">
           <div class="pw"></div>
           <span onclick="copyKey()" class="material-symbols-outlined">
             content_copy
           </span>
         </div>
-        <div class="alert" id="alert"></div>
-        <input id="lenghtInput" type="number" value="8" min="8" />
+        <div class="lenghtInputBox">
+          <label for="lenghtInput">Character lenght is: </label>
+          <input
+            id="lenghtInput"
+            class="lenghtInput"
+            type="number"
+            value="8"
+            min="8"
+          />
+        </div>
+
         <div class="checkboxes">
-          <label for="numbers">numbers</label>
-          <input type="checkbox" id="numbers" checked />
-          <label for="symbols">symbols</label>
-          <input type="checkbox" id="symbols" checked />
-          <label for="uppers">uppers</label>
-          <input type="checkbox" id="uppers" checked />
-          <label for="lowers">lowers</label>
-          <input type="checkbox" id="lowers" checked />
+          <div>
+            <label for="uppers">Upper Letters</label>
+            <input type="checkbox" id="uppers" checked />
+          </div>
+          <div>
+            <label for="lowers">Lower Letters</label>
+            <input type="checkbox" id="lowers" checked />
+          </div>
+          <div>
+            <label for="numbers">Numbers</label>
+            <input type="checkbox" id="numbers" />
+          </div>
+          <div>
+            <label for="symbols">Symbols</label>
+            <input type="checkbox" id="symbols" />
+          </div>
         </div>
 
         <button id="generate" onclick="generator()">Generate</button>

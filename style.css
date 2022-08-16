@@ -1,69 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=DynaPuff&family=Josefin+Sans&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color:thistle;
+  background-color: #fcf8e8;
+  font-family: "DynaPuff", cursive;
 }
 main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .container {
-    width: 70%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    background-color:darkcyan;
-    gap: 5%;
+  width: 450px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #df7861;
+  color: #fcf8e8;
+  gap: 5%;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 34px 0px rgba(84,84,84,0.6);
+    -moz-box-shadow: 10px 10px 34px 0px rgba(84, 84, 84, 0.6);
+    box-shadow: 10px 10px 34px 0px rgba(84,84,84,0.6);
 }
 main .container .pw-container {
-    display: flex;
-    background-color: wheat;
-    width: 60%;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    padding:2%;
+  display: flex;
+  background-color: #fcf8e8;
+  color: grey;
+  width: 60%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  border-radius: 6px;
+  
 }
-main .container #lenghtInput {
-    width: 20%;
-    height: 8%;
-}
-
-main .container .checkboxes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.lenghtInput {
-    width: 200px;
-    height: 30px;
-}
-#generate {
-    width: 200px;
-    height: 40px;
-}
-
-.alert {
-    background-color: #efefef;
-    color: #000;
-    visibility: hidden;
-}
-
-.closebtn {
-    margin-left: 15px;
-    color: #000;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
+main .container .pw-container .material-symbols-outlined {
     cursor: pointer;
-    transition: 0.3s;
+}
+main .container .lenghtInputBox {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+main .container .lenghtInput {
+  width: 20%;
+  height: 40px;
+  padding: 0px 2%;
+  border-radius: 6px;
+  border: none;
+}
+main .container .lenghtInput:hover {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
+}
+main .container .lenghtInput:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
+}
+main .container .checkboxes {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+main .container .checkboxes > div {
+  display: flex;
+  justify-content: space-between;
+}
+main .container .checkboxes input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #df7861;
+    cursor: pointer;
+}
+main .container .checkboxes input[type="checkbox"]:hover {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+main .container #generate {
+  width: 60%;
+  height: 50px;
+  background-color: #fcf8e8;
+  border: none;
+  border-radius: 6px;
+  font-family: "DynaPuff", cursive;
+  cursor: pointer;
+}
+main .container #generate:hover {
+    background-color: #e6e2d6;
+  }
+main .container .alert-container {
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+}
+main .container .alert-container .alert {
+    position: relative;
+    background-color: #fcf8e8;
+    color: grey;
+    padding: 10px;
+    border-radius: 6px;
+    bottom: -50px;
+    transition: all 0.5s;
+}
+.cancel {
+    font-size: 20px;
+}
+.material-symbols-outlined:hover {
+    color: rgb(190, 190, 190) ;
 }

@@ -10,7 +10,7 @@ const numbersInput = document.querySelector("#numbers");
 const symbolsInput = document.querySelector("#symbols");
 const uppersInput = document.querySelector("#uppers");
 const lowersInput = document.querySelector("#lowers");
-const alert = document.querySelector("#alert");
+const alert = document.querySelector(".alert");
 
 const generator = () => {
   let chars = "";
@@ -46,10 +46,10 @@ function copyKey() {
 }
 
 function showAlert(message) {
-  alert.innerHTML = message;
-  alert.style.visibility = "visible";
+  alert.innerHTML = `${message}`;
+  alert.style.bottom = "0";
 
   const myTimeout = setTimeout(() => {
-    alert.style.visibility = "hidden";
+    alert.style.bottom = "-50px";
   }, 1000);
 }
