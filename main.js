@@ -43,7 +43,7 @@ const generator = () => {
     pw.innerHTML = key;
     showBarLine(bar);
   } else {
-    showAlert("Character lenght must be in range of 5 - 25!");
+    showAlert("Character lenght must be in range of 6 - 25!");
   }
 };
 
@@ -67,7 +67,10 @@ function showAlert(message) {
 
 function showBarLine(bar) {
   if (lenghtInput.value >= 8) {
-    if (bar == 0.25) {
+    if (bar == 0) {
+      strenghtLine.style.width = "0%";
+      strenghtLine.style.backgroundColor = "#e6e2d6";
+    } else if (bar == 0.25) {
       strenghtLine.style.width = "25%";
       strenghtLine.style.backgroundColor = "#C21010";
     } else if (bar == 0.5) {
