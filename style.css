@@ -27,8 +27,19 @@ main .container {
   gap: 5%;
   border-radius: 6px;
   -webkit-box-shadow: 10px 10px 34px 0px rgba(84,84,84,0.6);
-    -moz-box-shadow: 10px 10px 34px 0px rgba(84, 84, 84, 0.6);
-    box-shadow: 10px 10px 34px 0px rgba(84,84,84,0.6);
+  -moz-box-shadow: 10px 10px 34px 0px rgba(84, 84, 84, 0.6);
+  box-shadow: 10px 10px 34px 0px rgba(84,84,84,0.6);
+}
+main .container .strenght-bar {
+  background-color: #e6e2d6;
+  width: 100%;
+  height: 8px;
+}
+main .container .strenght-bar .strenght-line {
+  transition: width 2s;
+  width: 0%;
+  height: 8px;
+  background-color: red;
 }
 main .container .pw-container {
   display: flex;
