@@ -13,7 +13,7 @@ const lowersInput = document.querySelector("#lowers");
 const alert = document.querySelector(".alert");
 const strenghtLine = document.querySelector(".strenght-line");
 
-window.onload = generator = () => {
+const generator = () => {
   let chars = "";
   let key = "";
   let bar = 0;
@@ -46,6 +46,11 @@ window.onload = generator = () => {
     showAlert("Character lenght must be in range of 6 - 25!");
   }
 };
+
+window.addEventListener("load", () => {
+  generator();
+});
+generateBtn.addEventListener("click", generator);
 
 function copyKey() {
   if (pw.innerHTML != "") {
