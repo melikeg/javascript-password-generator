@@ -1,5 +1,5 @@
 const uppers = "ABCDEFGHIJKLMNOPQRSTUWXVYZ";
-const lowers = "abcdefghıjklmnopqrstuwxvyz";
+const lowers = "abcdefghijklmnopqrstuwxvyz";
 const symbols = "~!@#$%^&*()-+=|";
 const numbers = "0123456789";
 
@@ -13,7 +13,7 @@ const lowersInput = document.querySelector("#lowers");
 const alert = document.querySelector(".alert");
 const strenghtLine = document.querySelector(".strenght-line");
 
-const generator = () => {
+window.onload = generator = () => {
   let chars = "";
   let key = "";
   let bar = 0;
